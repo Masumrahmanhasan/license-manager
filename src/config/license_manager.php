@@ -16,7 +16,8 @@
 //
 */
 return [
-    'server'        => env('LICENSE_SERVER', 'http://localhost/check-license.php'),
-    'response_type' => env('LICENSE_MANAGER_RESPONSE_TYPE', 'json'),
-    'timeout'       => 3000
+    'server'           => env('LICENSE_SERVER', 'http://localhost/check-license.php'),
+    'response_type'    => env('LICENSE_MANAGER_RESPONSE_TYPE', 'json'),
+    'timeout'          => 3000,
+    'middleware_group' => [ 'web', 'api' ]
 ];
