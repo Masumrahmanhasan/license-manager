@@ -1,0 +1,14 @@
+{
+    "name": "fathalfath30/license-manager",
+    "description": "Laravel apps license key manager.",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Alfath Dioni",
+            "email": "fathalfath30@gmail.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {}
+}
