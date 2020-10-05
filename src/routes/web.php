@@ -16,6 +16,7 @@
 //
 */
 
+use Fathalfath30\LicenseManager\Controllers\About;
 use Fathalfath30\LicenseManager\Controllers\RegisterLicense;
 use Fathalfath30\LicenseManager\Controllers\UnregisterLicense;
 use Illuminate\Support\Facades\Route;
@@ -36,8 +37,10 @@ Route::group([ 'prefix' => 'license', 'as' => 'license.' ],
       // unregister license
       Route::group([ 'prefix' => 'unregister', 'as' => 'unregister-license.' ],
           function () {
-
             Route::get('', UnregisterLicense::class);
             Route::post('', [ UnregisterLicense::class, 'execute' ]);
           });
+
+      // about class
+      Route::get('about', About::class);
     });
