@@ -16,8 +16,7 @@
 //
 */
 
-use Fathalfath30\LicenseManager\Controllers\Register\Index;
-use Fathalfath30\LicenseManager\Controllers\Register\Register;
+use Fathalfath30\LicenseManager\Controllers\RegisterLicense;
 use Illuminate\Support\Facades\Route;
 
 Route::group([ 'prefix' => 'license', 'as' => 'license.' ],
@@ -29,7 +28,7 @@ Route::group([ 'prefix' => 'license', 'as' => 'license.' ],
       // register license
       Route::group([ 'prefix' => 'register', 'as' => 'register-license' ],
           function () {
-            Route::get('', Index::class);
-            Route::get('', Register::class);
+            Route::get('', RegisterLicense::class);
+            Route::post('', [ RegisterLicense::class, 'execute' ]);
           });
     });
