@@ -16,14 +16,14 @@
 //
 */
 
-namespace Fathalfath30\LicenseManager\Controllers;
+namespace Fathalfath30\LicenseManager\Controllers\Register;
 
 use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
 
-class InsertLicense extends Controller {
+class Index extends Controller {
   public function __invoke (Request $request) {
-    // TODO: Implement __invoke() method.
+    echo 'license-manager register-license::index';
   }
 
   public function execute (Request $request) {

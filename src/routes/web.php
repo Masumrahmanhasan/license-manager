@@ -16,9 +16,20 @@
 //
 */
 
+use Fathalfath30\LicenseManager\Controllers\Register\Index;
+use Fathalfath30\LicenseManager\Controllers\Register\Register;
 use Illuminate\Support\Facades\Route;
 
-Route::group([ 'prefix' => 'license' ],
+Route::group([ 'prefix' => 'license', 'as' => 'license.' ],
     function () {
-      Route::get('', Fathalfath30\LicenseManager\Controllers\InsertLicense::class);
+      // license manager homepage
+      Route::get('', Fathalfath30\LicenseManager\Controllers\Homepage::class)
+           ->name('homepage');
+
+      // register license
+      Route::group([ 'prefix' => 'register', 'as' => 'register-license' ],
+          function () {
+            Route::get('', Index::class);
+            Route::get('', Register::class);
+          });
     });

@@ -16,18 +16,17 @@
 //
 */
 
-namespace Fathalfath30\LicenseManager\Middleware;
+namespace Fathalfath30\LicenseManager\Controllers\Register;
 
-use Closure;
+use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
 
-class LicenseManager {
-  public function handle (Request $request, Closure $next, $guard = null) {
-    $licensePath = storage_path('app.lic');
-    if ( !file_exists($licensePath) ) {
-      return redirect()->route('license.homepage');
-    }
+class Register extends Controller {
+  public function __invoke (Request $request) {
+    echo 'license-manager register-license::register';
+  }
 
-    return $next($request);
+  public function execute (Request $request) {
+    // TODO: Implement execute() method
   }
 }
