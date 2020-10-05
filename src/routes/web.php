@@ -15,3 +15,10 @@
 //  Gitlab : https://gitlab.com/Fathalfath30
 //
 */
+
+use Illuminate\Support\Facades\Route;
+
+Route::group([ 'prefix' => 'license' ],
+    function () {
+      Route::get('', Fathalfath30\LicenseManager\Controllers\InsertLicense::class);
+    });
