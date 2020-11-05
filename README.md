@@ -7,12 +7,16 @@
 ## Service provider
 Once Composer has installed or updated your packages you need to register this package. Open up `config/app.php` and find the providers key and add :
 
-`\Fathalfath30\LicenseManager\Middleware\LicenseManager::class`
+````php
+ \Fathalfath30\LicenseManager\Middleware\LicenseManager::class
+````
 
 ## Configuration
 Finally you need to publish a configuration file by running the following Artisan command :
 
-`php artisan vendor:publish --tag="license_manager"`
+````shell script
+php artisan vendor:publish --tag="license_manager"
+````
 
 ## Contributing
 I'm not currently taking contributions from others due to the fact I am in early stages.
