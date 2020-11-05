@@ -23,7 +23,7 @@ use Illuminate\Http\Request;
 
 class Homepage extends Controller {
   public function __invoke (Request $request) {
-    echo 'license-manager homepage';
+    return view('licenseManager::layout.license-manager');
   }
 
   public function execute (Request $request) {
