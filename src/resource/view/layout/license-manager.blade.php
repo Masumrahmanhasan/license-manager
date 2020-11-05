@@ -13,7 +13,7 @@
 //  Github : https://github.com/fathalfath30
 //  Gitlab : https://gitlab.com/Fathalfath30
 //
---}}<!DOCTYPE html>
+--}}<!doctype html>
 <html lang='{{ app()->getLocale() }}'>
 <head>
   <!-- Required meta tags -->
@@ -23,12 +23,28 @@
   <title>{{ env('APP_NAME', 'Fathalfath30') }} :: License Manager</title>
 
   <link rel='stylesheet' href='{{ asset('license-manager/vendor/bootstrap/css/bootstrap.min.css') }}' />
+
+  {{-- other css --}}
+  @stack('css')
 </head>
 <body>
+<div class='container'>
+  <div class='row'>
+    <div class='col-lg-12'>
+      <h4>{{ env('APP_NAME','Fathalfath30') }} :: License Manager</h4>
+    </div>
+  </div>
+
+  {{-- main content --}}
+  @yield('content')
+</div>
 
 <!-- jQuery first, then Popper.js, then Bootstrap JS -->
 <script type='text/javascript' src='{{ asset('license-manager/vendor/jquery/jquery-3.2.1.slim.min.js') }}'></script>
 <script type='text/javascript' src='{{ asset('license-manager/vendor/popper/popper.min.js') }}'></script>
 <script type='text/javascript' src='{{ asset('license-manager/vendor/bootstrap/js/bootstrap.min.js') }}'></script>
+
+{{-- other javascript --}}
+@stack('javascript')
 </body>
 </html>
