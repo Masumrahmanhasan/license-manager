@@ -1,8 +1,29 @@
 ## License Manager
+
+<p align="center">
+    <a href="https://github.com/fathalfath30/license-manager">
+        <img src='https://travis-ci.org/fathalfath30/license-manager.svg?branch=master' alt='Build Status'/>
+    </a>
+    <a href='https://packagist.org/packages/fathalfath30/license-manager'>
+        <img src='https://img.shields.io/packagist/dt/fathalfath30/license-manager' alt='Total Downloads'/>
+    </a>
+    <a href='https://packagist.org/packages/fathalfath30/license-manager'>
+        <img src='https://img.shields.io/packagist/v/fathalfath30/license-manager' alt='Latest Stable Version '/>
+    </a>
+    <a href='https://packagist.org/packages/fathalfath30/license-manager'>
+        <img src='https://img.shields.io/packagist/l/fathalfath30/license-manager' alt='License '/>
+    </a>
+    <a href='https://packagist.org/packages/fathalfath30/license-manager'>
+        <img src='https://img.shields.io/github/stars/fathalfath30/license-manager' alt='License '/>
+    </a>
+</p>
+
 **License Manager** is a library build for laravel framework. It is intended to allow developers to be able to license their applications without having to create a licensing system of their own. **FYI : This library is still under heavy development and is not in a completed state! You will be able to do nothing with it right now.**
 
 ## Getting Started
-***Coming Soon***
+````shell script
+composer require fathalfath30/license-manager
+````
 
 ## Laravel version compatibility
 
