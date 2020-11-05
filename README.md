@@ -2,19 +2,22 @@
 
 <p align="center">
     <a href="https://github.com/fathalfath30/license-manager">
-        <img src='https://travis-ci.org/fathalfath30/license-manager.svg?branch=master' alt='Build Status'/>
+        <img alt="Travis (.org)" src="https://img.shields.io/travis/fathalfath30/license-manager">
     </a>
     <a href='https://packagist.org/packages/fathalfath30/license-manager'>
-        <img src='https://img.shields.io/packagist/dt/fathalfath30/license-manager' alt='Total Downloads'/>
+        <img alt="Packagist Downloads" src="https://img.shields.io/packagist/dt/fathalfath30/license-manager">
     </a>
     <a href='https://packagist.org/packages/fathalfath30/license-manager'>
-        <img src='https://img.shields.io/packagist/v/fathalfath30/license-manager' alt='Latest Stable Version '/>
+        <img alt="Packagist Version" src="https://img.shields.io/packagist/v/fathalfath30/license-manager">
     </a>
     <a href='https://packagist.org/packages/fathalfath30/license-manager'>
-        <img src='https://img.shields.io/packagist/l/fathalfath30/license-manager' alt='License '/>
+        <img alt="Packagist License" src="https://img.shields.io/packagist/l/fathalfath30/license-manager">
     </a>
     <a href='https://packagist.org/packages/fathalfath30/license-manager'>
-        <img src='https://img.shields.io/github/stars/fathalfath30/license-manager' alt='License '/>
+        <img src='https://img.shields.io/github/stars/fathalfath30/license-manager' alt='stars'/>
+    </a>
+    <a href='https://packagist.org/packages/fathalfath30/license-manager'>
+        <img alt="GitHub repo size" src="https://img.shields.io/github/repo-size/fathalfath30/license-manager?style=flat-square">
     </a>
 </p>
 
@@ -35,7 +38,7 @@ composer require fathalfath30/license-manager
 Once Composer has installed or updated your packages you need to register this package. Open up `config/app.php` and find the providers key and add :
 
 ````php
- \Fathalfath30\LicenseManager\Middleware\LicenseManager::class
+ use Fathalfath30\LicenseManager\Middleware\LicenseManager;LicenseManager::class
 ````
 
 ## Configuration
