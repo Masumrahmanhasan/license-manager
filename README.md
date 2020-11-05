@@ -17,7 +17,7 @@
         <img src='https://img.shields.io/github/stars/fathalfath30/license-manager' alt='stars'/>
     </a>
     <a href='https://packagist.org/packages/fathalfath30/license-manager'>
-        <img alt="GitHub repo size" src="https://img.shields.io/github/repo-size/fathalfath30/license-manager?style=flat-square">
+        <img alt="GitHub repo size" src="https://img.shields.io/github/repo-size/fathalfath30/license-manager?style=flat">
     </a>
 </p>
 
