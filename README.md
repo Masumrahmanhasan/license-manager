@@ -4,6 +4,12 @@
 ## Getting Started
 ***Coming Soon***
 
+## Laravel version compatibility
+
+| Laravel version | Package Version |
+| :-------------: | :-------------: |
+| 8.x.x           | 8.x.x           | 
+
 ## Service provider
 Once Composer has installed or updated your packages you need to register this package. Open up `config/app.php` and find the providers key and add :
 
