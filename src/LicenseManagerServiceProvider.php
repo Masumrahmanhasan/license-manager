@@ -41,5 +41,8 @@ class LicenseManagerServiceProvider extends ServiceProvider {
     foreach ( $this->config['middleware_group'] as $mGroup ) {
       $kernel->prependMiddlewareToGroup($mGroup, LicenseManager::class);
     }
+
+    // registering package view
+    $this->loadViewsFrom(__DIR__ . '/resource/view', 'licenseManager');
   }
 }
