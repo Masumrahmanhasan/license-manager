@@ -33,3 +33,9 @@ This project is licensed under the [MIT License](https://github.com/fathalfath30
 ## Third-party
 - [guzzle/guzzle](https://github.com/guzzle/guzzle)
 - [erusev/parsedown](https://github.com/erusev/parsedown)
+- [bootstrap 4](https://getbootstrap.com/)
+- [jquery](https://jquery.com/)
+- [axios/axios](https://github.com/axios/axios)
+- [polyfill](https://polyfill.io/v3/)
+- [popper.js](https://popper.js.org/)
+- [sweetalert2](https://sweetalert2.github.io/)
