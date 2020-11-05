@@ -29,3 +29,7 @@ I'm not currently taking contributions from others due to the fact I am in early
 
 ## License
 This project is licensed under the [MIT License](https://github.com/fathalfath30/license-manager/blob/master/LICENSE).
+
+## Third-party
+- [guzzle/guzzle](https://github.com/guzzle/guzzle)
+- [erusev/parsedown](https://github.com/erusev/parsedown)
