@@ -19,16 +19,5 @@ return [
     'server'             => env('LICENSE_SERVER', 'http://localhost/check-license.php'),
     'response_type'      => env('LICENSE_MANAGER_RESPONSE_TYPE', 'json'),
     'timeout'            => 3000,
-    'middleware_group'   => [ 'web', 'api' ],
-    'required_extension' => [
-        'php'       => '7.1.3',
-        'mcrypt'    => '*',
-        'openssl'   => '*',
-        'pdo'       => '*',
-        'mbstring'  => '*',
-        'tokenizer' => '*',
-        'xml'       => '*',
-        'ctype'     => '*',
-        'json'      => '*'
-    ]
+    'middleware_group'   => [ 'web', 'api' ]
 ];

@@ -23,6 +23,7 @@
   <title>{{ env('APP_NAME', 'Fathalfath30') }} :: License Manager</title>
 
   <link rel='stylesheet' href='{{ asset('license-manager/vendor/bootstrap/css/bootstrap.min.css') }}' />
+  <link rel='stylesheet' href='{{ asset('license-manager/vendor/fontawesome/css/all.min.css') }}'>
 
   {{-- other css --}}
   @stack('css')
@@ -43,6 +44,7 @@
 <script type='text/javascript' src='{{ asset('license-manager/vendor/jquery/jquery-3.2.1.slim.min.js') }}'></script>
 <script type='text/javascript' src='{{ asset('license-manager/vendor/popper/popper.min.js') }}'></script>
 <script type='text/javascript' src='{{ asset('license-manager/vendor/bootstrap/js/bootstrap.min.js') }}'></script>
+<script type='text/javascript' src='{{ asset('license-manager/vendor/fontawesome/js/all.min.js') }}'></script>
 
 {{-- other javascript --}}
 @stack('javascript')
