@@ -38,7 +38,7 @@ composer require fathalfath30/license-manager
 Once Composer has installed or updated your packages you need to register this package. Open up `config/app.php` and find the providers key and add :
 
 ````php
- use Fathalfath30\LicenseManager\Middleware\LicenseManager;LicenseManager::class
+ Fathalfath30\LicenseManager\LicenseManagerServiceProvider::class
 ````
 
 ## Configuration
