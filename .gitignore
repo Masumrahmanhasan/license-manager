@@ -1,1 +1,9 @@
-/vendor/
+# laravel vendor
+vendor/**
+
+# lock file
+*.yarn.lock
+*.lock
+
+# other cache file
+*.cache
