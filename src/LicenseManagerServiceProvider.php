@@ -19,6 +19,7 @@
 namespace Fathalfath30\LicenseManager;
 
 use App\Http\Kernel;
+use Illuminate\Foundation\Application as Laravel;
 use Illuminate\Routing\Router;
 use Illuminate\Support\ServiceProvider;
 
@@ -26,13 +27,26 @@ class LicenseManagerServiceProvider extends ServiceProvider
 {
   private $config;
 
-  public function register()
+  protected function setupConfig()
   {
-    parent::register();
+    $source = realpath(__DIR__ . './config/license-manager.php');
+    if( $this->app instanceof Laravel && $this->app->runningInConsole() ) {
+      $this->publishes([
+        $source => config_path('license-manager.php')
+      ], 'license_manager');
+    }
+
+    $this->mergeConfigFrom($source, 'license-manager');
+    $this->config = $this->app['config']->get('license-manager');
   }
 
   public function boot(Router $router, Kernel $kernel)
   {
+    $this->setupConfig();
 
+    $this->loadRoutesFrom(__DIR__ . './routes/web.php');
+    foreach( $this->config['middleware_group'] as $mGroup ) {
+      $kernel->prependMiddlewareToGroup($mGroup, LicenseManager::class);
+    }
   }
 }
