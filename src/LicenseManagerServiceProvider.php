@@ -31,19 +31,6 @@ class LicenseManagerServiceProvider extends ServiceProvider {
   }
 
   public function boot (Router $router, Kernel $kernel) {
-    $this->publishes([
-        __DIR__ . '/config/license_manager.php' => config_path('license_manager.php'),
-        __DIR__ . './vendor'                    => public_path('license-manager/vendor')
-    ], 'license_manager');
 
-    $this->config = $this->app['config']->get('license_manager');
-    $this->loadRoutesFrom(__DIR__ . '/routes/web.php');
-
-    foreach ( $this->config['middleware_group'] as $mGroup ) {
-      $kernel->prependMiddlewareToGroup($mGroup, LicenseManager::class);
-    }
-
-    // registering package view
-    $this->loadViewsFrom(__DIR__ . '/resource/view', 'licenseManager');
   }
 }
