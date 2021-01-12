@@ -15,6 +15,11 @@
       "Fathalfath30\\LicenseManager\\": "src/"
     }
   },
+  "autoload-dev": {
+    "psr-4": {
+      "Fathalfath30\\LicenseManager\\Tests\\": "tests/"
+    }
+  },
   "require": {
     "php": "^7.4",
     "guzzlehttp/guzzle": "^7.1",
