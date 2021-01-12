@@ -19,18 +19,20 @@
 namespace Fathalfath30\LicenseManager;
 
 use App\Http\Kernel;
-use Fathalfath30\LicenseManager\Middleware\LicenseManager;
 use Illuminate\Routing\Router;
 use Illuminate\Support\ServiceProvider;
 
-class LicenseManagerServiceProvider extends ServiceProvider {
+class LicenseManagerServiceProvider extends ServiceProvider
+{
   private $config;
 
-  public function register () {
+  public function register()
+  {
     parent::register();
   }
 
-  public function boot (Router $router, Kernel $kernel) {
+  public function boot(Router $router, Kernel $kernel)
+  {
 
   }
 }
